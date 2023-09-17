@@ -1,0 +1,16 @@
+PODS:
+  - XSplashScreen (0.1.0)
+
+DEPENDENCIES:
+  - XSplashScreen (from `../`)
+
+EXTERNAL SOURCES:
+  XSplashScreen:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XSplashScreen: b502b6ede7b4cbe19256b9d047f6cde1da14beef
+
+PODFILE CHECKSUM: d2dee1bc7a8d84d6e290e33d4248d874724aa485
+
+COCOAPODS: 1.11.3
