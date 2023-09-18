@@ -40,6 +40,8 @@ public class XSplashScreenController: UIViewController {
     public override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        setupGesture()
+        animate()
     }
 
 }
@@ -79,6 +81,48 @@ extension XSplashScreenController {
         
         view.addSubview(logoView)
         view.addSubview(appNameLabel)
+    }
+    
+    
+    private func animate() {
+        // 创建缩放动画
+        var animation = CABasicAnimation(keyPath: "transform.scale")
+        animation.fromValue = 0.6
+        animation.toValue = 1.0
+        animation.duration = 0.5
+        animation.autoreverses = false
+        animation.repeatCount = .zero
+        
+        // 将动画添加到视图的图层
+        logoView.layer.add(animation, forKey: "scaleAnimation")
+        
+        // 创建透明度动画
+        animation = CABasicAnimation(keyPath: "opacity")
+        animation.fromValue = 0.0
+        animation.toValue = 1.0
+        animation.duration = 0.5
+        animation.autoreverses = false
+        animation.repeatCount = .zero
+        
+        // 将动画添加到视图的图层
+        logoView.layer.add(animation, forKey: "opacityAnimation")
+        
+        appNameLabel.layer.add(animation, forKey: "opacityAnimation")
+    }
+    
+}
+
+// MARK: - Gesture
+extension XSplashScreenController {
+    
+    private func setupGesture() {
+        // Testing: using gesture to animate
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(tapOnBackground))
+        view.addGestureRecognizer(tapGesture)
+    }
+    
+    @objc private func tapOnBackground() {
+        animate()
     }
     
 }
