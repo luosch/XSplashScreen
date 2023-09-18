@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import XSplashScreen
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        var config = XSplashScreenConfig()
+        config.backgroundColor = UIColor.white
+        config.logoImage = UIImage(named: "app-logo")
+        config.logoCenterY = 0.4
+        config.logoSize = CGSize(width: 120, height: 120)
+        config.appName = "XSplashScreen"
+        config.appNameFont = UIFont.boldSystemFont(ofSize: 20)
+        config.appNameTextColor = UIColor.black
+        
+        XSplashScreenProvider.shared.updateConfig(config)
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.rootViewController = XSplashScreenController()
+        window.makeKeyAndVisible()
+        self.window = window
+        
         return true
     }
 

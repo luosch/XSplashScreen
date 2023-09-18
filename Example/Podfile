@@ -1,13 +1,7 @@
 use_frameworks!
 
-platform :ios, '10.0'
+platform :ios, '12.0'
 
 target 'XSplashScreen_Example' do
   pod 'XSplashScreen', :path => '../'
-
-  target 'XSplashScreen_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end
