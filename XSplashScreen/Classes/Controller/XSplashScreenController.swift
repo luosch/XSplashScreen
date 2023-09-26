@@ -25,6 +25,13 @@ public class XSplashScreenController: UIViewController {
         return label
     }()
     
+    private lazy var testLabel: XSplashScreenLabel = {
+        let label = XSplashScreenLabel(string: XSplashScreenProvider.shared.config.appName,
+                                       font: XSplashScreenProvider.shared.config.appNameFont,
+                                       textColor: XSplashScreenProvider.shared.config.appNameTextColor)
+        return label
+    }()
+    
     deinit {
         xlog("deinit")
     }
@@ -74,40 +81,49 @@ extension XSplashScreenController {
                                     y: appNameLabelY,
                                     width: appNameLabelSize.width,
                                     height: appNameLabelSize.height)
+        
+        testLabel.layoutSubviews()
+        testLabel.frame = CGRect(x: appNameLabelX - testLabel.bounds.width * 0.5,
+                                 y: appNameLabelY,
+                                 width: testLabel.bounds.width,
+                                 height: testLabel.bounds.height)
     }
     
     private func setupUI() {
         view.backgroundColor = XSplashScreenProvider.shared.config.backgroundColor
         
         view.addSubview(logoView)
-        view.addSubview(appNameLabel)
+//        view.addSubview(appNameLabel)
+        view.addSubview(testLabel)
     }
     
     
     private func animate() {
-        // 创建缩放动画
+        // transform animation
         var animation = CABasicAnimation(keyPath: "transform.scale")
         animation.fromValue = 0.6
         animation.toValue = 1.0
-        animation.duration = 0.5
+        animation.duration = 0.6
         animation.autoreverses = false
         animation.repeatCount = .zero
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         
-        // 将动画添加到视图的图层
         logoView.layer.add(animation, forKey: "scaleAnimation")
         
-        // 创建透明度动画
+        // opacity animation
         animation = CABasicAnimation(keyPath: "opacity")
-        animation.fromValue = 0.0
+        animation.fromValue = 0.3
         animation.toValue = 1.0
-        animation.duration = 0.5
+        animation.duration = 0.6
         animation.autoreverses = false
         animation.repeatCount = .zero
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         
-        // 将动画添加到视图的图层
         logoView.layer.add(animation, forKey: "opacityAnimation")
         
         appNameLabel.layer.add(animation, forKey: "opacityAnimation")
+        
+        testLabel.animate()
     }
     
 }

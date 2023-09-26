@@ -21,5 +21,5 @@ internal func xlog(_ items: Any...) {
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = "HH:mm:ss:SSS"
     let timestamp = dateFormatter.string(from: Date())
-    print("[XplashScreen] \(timestamp) >", output)
+    print("[XSplashScreen] \(timestamp) >", output)
 }
