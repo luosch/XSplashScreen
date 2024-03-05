@@ -22,10 +22,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         config.backgroundColor = UIColor.white
         config.logoImage = UIImage(named: "app-logo")
         config.logoCenterY = 0.4
-        config.logoSize = CGSize(width: 120, height: 120)
+        config.logoSize = CGSize(width: 140, height: 140)
         config.appName = "XSplashScreen"
         config.appNameFont = UIFont.boldSystemFont(ofSize: 20)
         config.appNameTextColor = UIColor.black
+        config.lineGap = 12.0
         
         XSplashScreenProvider.shared.updateConfig(config)
         
