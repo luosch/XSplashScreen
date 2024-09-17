@@ -74,7 +74,7 @@ extension XSplashScreenLabel {
         for i in 0..<labels.count {
             // opacity animation
             labels[i].alpha = 0
-            UIView.animate(withDuration: 0.3, delay: CGFloat(i) * 0.05, options: .curveEaseInOut) {
+            UIView.animate(withDuration: 0.5, delay: CGFloat(i) * 0.05, options: .curveEaseInOut) {
                 self.labels[i].alpha = 1
             } completion: { _ in
                 

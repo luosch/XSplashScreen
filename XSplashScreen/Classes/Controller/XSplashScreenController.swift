@@ -34,7 +34,7 @@ open class XSplashScreenController: UIViewController {
         fatalError("init(coder:) has not been implemented")
     }
     
-    public override func viewDidLoad() {
+    open override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
         animate()
@@ -90,10 +90,10 @@ extension XSplashScreenController {
         var animation = CABasicAnimation(keyPath: "transform.scale")
         animation.fromValue = 0.6
         animation.toValue = 1.0
-        animation.duration = 0.5
+        animation.duration = 0.8
         animation.autoreverses = false
         animation.repeatCount = .zero
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         
         logoView.layer.add(animation, forKey: "scaleAnimation")
         
@@ -101,10 +101,10 @@ extension XSplashScreenController {
         animation = CABasicAnimation(keyPath: "opacity")
         animation.fromValue = 0.3
         animation.toValue = 1.0
-        animation.duration = 0.5
+        animation.duration = 0.8
         animation.autoreverses = false
         animation.repeatCount = .zero
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         
         logoView.layer.add(animation, forKey: "opacityAnimation")
         
