@@ -64,7 +64,7 @@ extension XSplashScreenController {
         let appNameLabelSize = appNameLabel.sizeThatFits(CGSize(width: view.bounds.width - 16.0*2.0,
                                                                 height: CGFloat.greatestFiniteMagnitude))
         let appNameLabelX = view.bounds.width * 0.5
-        let appNameLabelY = logoView.frame.maxY + config.lineGap
+        let appNameLabelY = logoViewCenterY + logoViewHeight * 0.5 + config.lineGap
         
         appNameLabel.frame = CGRect(x: appNameLabelX - appNameLabelSize.width * 0.5,
                                     y: appNameLabelY,
@@ -93,7 +93,7 @@ extension XSplashScreenController {
         animation.duration = 0.8
         animation.autoreverses = false
         animation.repeatCount = .zero
-        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         
         logoView.layer.add(animation, forKey: "scaleAnimation")
         
@@ -104,7 +104,7 @@ extension XSplashScreenController {
         animation.duration = 0.8
         animation.autoreverses = false
         animation.repeatCount = .zero
-        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
         
         logoView.layer.add(animation, forKey: "opacityAnimation")
         
