@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FFA81B4B0E49E81C278DAC2 /* Pods_XSplashScreen_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C59F32F31AC8A889D30D95F /* Pods_XSplashScreen_Example.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		7EABFD5A2AB72C7600E61953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EABFD592AB72C7600E61953 /* LaunchScreen.storyboard */; };
+		8151C834A0BE1260B29A5742 /* Pods_XSplashScreen_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA03431B8D40FEF68C631A4 /* Pods_XSplashScreen_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		40DC314038136B08D95F58CA /* Pods-XSplashScreen_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSplashScreen_Example.debug.xcconfig"; path = "Target Support Files/Pods-XSplashScreen_Example/Pods-XSplashScreen_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		5C59F32F31AC8A889D30D95F /* Pods_XSplashScreen_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XSplashScreen_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1AA03431B8D40FEF68C631A4 /* Pods_XSplashScreen_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XSplashScreen_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		207C26B4879B56BDBF53DC72 /* Pods-XSplashScreen_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSplashScreen_Example.debug.xcconfig"; path = "Target Support Files/Pods-XSplashScreen_Example/Pods-XSplashScreen_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* XSplashScreen_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XSplashScreen_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -26,7 +26,7 @@
 		622EBE067B32BEF4322E3838 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		7EABFD592AB72C7600E61953 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BD865E1F5E54390D97D8CFFD /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		DA81D5911BCD34B2A6D73CC2 /* Pods-XSplashScreen_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSplashScreen_Example.release.xcconfig"; path = "Target Support Files/Pods-XSplashScreen_Example/Pods-XSplashScreen_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C69E1BC5121D8B326E9BEBD5 /* Pods-XSplashScreen_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XSplashScreen_Example.release.xcconfig"; path = "Target Support Files/Pods-XSplashScreen_Example/Pods-XSplashScreen_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,21 +34,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FFA81B4B0E49E81C278DAC2 /* Pods_XSplashScreen_Example.framework in Frameworks */,
+				8151C834A0BE1260B29A5742 /* Pods_XSplashScreen_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		018DB40247EC31662DC93F22 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				5C59F32F31AC8A889D30D95F /* Pods_XSplashScreen_Example.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -56,7 +48,7 @@
 				607FACD21AFB9204008FA782 /* Example for XSplashScreen */,
 				607FACD11AFB9204008FA782 /* Products */,
 				724826A80D8A02386DC46D90 /* Pods */,
-				018DB40247EC31662DC93F22 /* Frameworks */,
+				A1138B168E33681C7D4FC23F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,10 +94,18 @@
 		724826A80D8A02386DC46D90 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				40DC314038136B08D95F58CA /* Pods-XSplashScreen_Example.debug.xcconfig */,
-				DA81D5911BCD34B2A6D73CC2 /* Pods-XSplashScreen_Example.release.xcconfig */,
+				207C26B4879B56BDBF53DC72 /* Pods-XSplashScreen_Example.debug.xcconfig */,
+				C69E1BC5121D8B326E9BEBD5 /* Pods-XSplashScreen_Example.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A1138B168E33681C7D4FC23F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AA03431B8D40FEF68C631A4 /* Pods_XSplashScreen_Example.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -115,11 +115,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 607FACEF1AFB9204008FA782 /* Build configuration list for PBXNativeTarget "XSplashScreen_Example" */;
 			buildPhases = (
-				ECAB015EDF38EDC2C9A4504C /* [CP] Check Pods Manifest.lock */,
+				5C41D25FCAB7DFB1D888C1AA /* [CP] Check Pods Manifest.lock */,
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				481B40F95555CD73F996F9B3 /* [CP] Embed Pods Frameworks */,
+				FC31AAB9FEF608E68A84C66B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,25 +179,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		481B40F95555CD73F996F9B3 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XSplashScreen_Example/Pods-XSplashScreen_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/XSplashScreen/XSplashScreen.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XSplashScreen.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XSplashScreen_Example/Pods-XSplashScreen_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ECAB015EDF38EDC2C9A4504C /* [CP] Check Pods Manifest.lock */ = {
+		5C41D25FCAB7DFB1D888C1AA /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -217,6 +199,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC31AAB9FEF608E68A84C66B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XSplashScreen_Example/Pods-XSplashScreen_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/XSplashScreen/XSplashScreen.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XSplashScreen.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XSplashScreen_Example/Pods-XSplashScreen_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -289,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -335,7 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -345,11 +345,11 @@
 		};
 		607FACF01AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 40DC314038136B08D95F58CA /* Pods-XSplashScreen_Example.debug.xcconfig */;
+			baseConfigurationReference = 207C26B4879B56BDBF53DC72 /* Pods-XSplashScreen_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XSplashScreen/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -364,11 +364,11 @@
 		};
 		607FACF11AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA81D5911BCD34B2A6D73CC2 /* Pods-XSplashScreen_Example.release.xcconfig */;
+			baseConfigurationReference = C69E1BC5121D8B326E9BEBD5 /* Pods-XSplashScreen_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XSplashScreen/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

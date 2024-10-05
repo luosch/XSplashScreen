@@ -9,7 +9,9 @@ Pod::Spec.new do |s|
   s.author           = { 'luosch' => 'i@lsich.com' }
   s.source           = { :git => 'https://github.com/luosch/XSplashScreen.git', :tag => s.version.to_s }
   
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '13.0'
 
   s.source_files = 'XSplashScreen/Classes/**/*'
+  s.framework    = 'UIKit', 'Foundation', 'QuartzCore'
+  s.swift_versions = ['5.0']
 end

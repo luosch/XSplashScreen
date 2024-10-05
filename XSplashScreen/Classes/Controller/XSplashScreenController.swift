@@ -93,7 +93,7 @@ extension XSplashScreenController {
         animation.duration = 0.8
         animation.autoreverses = false
         animation.repeatCount = .zero
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         
         logoView.layer.add(animation, forKey: "scaleAnimation")
         
@@ -104,7 +104,7 @@ extension XSplashScreenController {
         animation.duration = 0.8
         animation.autoreverses = false
         animation.repeatCount = .zero
-        animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+        animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
         
         logoView.layer.add(animation, forKey: "opacityAnimation")
         
