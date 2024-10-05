@@ -1,5 +1,5 @@
 PODS:
-  - XSplashScreen (0.1.0)
+  - XSplashScreen (1.0.0)
 
 DEPENDENCIES:
   - XSplashScreen (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XSplashScreen: b502b6ede7b4cbe19256b9d047f6cde1da14beef
+  XSplashScreen: d35c27c8dc7d61018376eeb0be7b3d94aa399b27
 
 PODFILE CHECKSUM: 3d73eda03d6d81982b1e02b7e4ab5713270d977f
 
-COCOAPODS: 1.14.3
+COCOAPODS: 1.15.2
